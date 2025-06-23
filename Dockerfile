@@ -1,7 +1,7 @@
 # ------------------------------------------------
 # Créer une Image runtime basée sur Tomcat 10
 # ------------------------------------------------
-FROM tomcat:10.0-jdk17
+FROM tomcat:8-jre8
 # Effacer les exemples par défaut pour un conteneur propre
 RUN rm -rf /usr/local/tomcat/webapps/*
 # Copier le fichier WAR généré
